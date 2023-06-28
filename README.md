@@ -1,2 +1,2 @@
-# JON_SCHEAFFER
+# JON SCHEAFFER
 Personal Website
