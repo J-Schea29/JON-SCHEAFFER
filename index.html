@@ -15,6 +15,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- <link rel="icon" href="images\ProfilePIC.png"> -->
 </head>
+
+
+<style>
+  @media (max-width: 767px) {
+      .container-fluid.row {
+          flex-direction: column; /* Stack items vertically on smaller screens */
+      }
+      .col-md-4, .col-md-8 {
+          flex: 1; /* Make both containers take equal space */
+      }
+  }
+</style>
+
+
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKKM5S5"
@@ -61,18 +75,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p  style="font-weight: 600; font-size: 3vw;">I am passionate about Causal Inference for Data Analysis.</p>
           <br>
           <p style="font-weight: 600; font-size: 3vw;">Let me help you find actionable insights to improve your company’s bottom line!</p>
+          <br>
         </div>  
       </div>
     </section>
 
     <br>
     <!-- My Story Section -->
-    <section class="container-fluid row" style="background-color: #e6e6e6;  padding: 2vw;">
-      <div class="row" style="">
-        <div class="col-md-4" style="padding-top: auto; padding-bottom: auto;">
-          <img src="images\grad_photo.jpg" style = "max-width: 100%; height: auto; margin-top: auto; margin-bottom: auto; display: flex; align-items: center" alt="Grad Photo">
+    <section class="container-fluid row" style="background-color: #e6e6e6;  padding: 2vw; display: flex; flex-wrap: wrap;">
+
+        <div class="col-md-4" style="background-color:  #ffffff; flex: 1; padding: 1vw; display: flex; align-items: center; justify-content: center">
+          <div style="background-color:  rgb(199, 153, 176); padding: 1vw;">
+            <img src="images\grad_photo.jpg" style="max-width: 100%; width: 30vw;" alt="Grad Photo">
+          </div>
         </div>
-        <div class="col-md-8" style="background-color: #f3f2f2; margin-top: auto; margin-bottom: auto;"> 
+        <div class="col-md-8" style="background-color: #f3f2f2; flex: 2"> 
           <br>
           <p style="font-weight: 600; font-size: 2vw;">My Story</p>
           <br>
@@ -88,7 +105,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </p>
           <br>
         </div> 
-    </div>
+    
     </section>
     <br>
     
