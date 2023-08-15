@@ -15,6 +15,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    
+  <style>
+    .intro-page {
+      background-image: linear-gradient(to right, rgb(7, 7, 44), rgb(45, 45, 97));
+      color: rgb(199, 153, 176); 
+      font-weight: 600; 
+      font-size: 20px;
+    }
+    .header-section { 
+      font-weight: 600; font-size: 2vw;
+    }
+    .section-box {
+      background-color: #e6e6e6;  padding: 2vw; display: flex; flex-wrap: wrap;
+    }
+    .picture-box-outside {
+      background-color:  #ffffff; flex: 1; padding: 1vw; display: flex; align-items: center; justify-content: center
+    }
+    .picture-box-inside {
+      background-color:  rgb(199, 153, 176); padding: 1vw;
+    }
+    .image-sect{
+      max-width: 100%; width: 30vw;
+    }
+    .text-box-sect { 
+      background-color: #f3f2f2; flex: 2; font-weight: 500; font-size: 1.5vw;
+    }
+    @media (max-width: 767px) {
+        .container-fluid.row {
+            flex-direction: column; /* Stack items vertically on smaller screens */
+        }
+        .col-md-4, .col-md-8 {
+            flex: 1; /* Make both containers take equal space */
+        }
+    }
+  </style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -22,8 +58,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-  <!-- nav Section -->
-   
+  
    <!-- nav Section -->
    <nav class="navbar navbar-default" style="background-color: #333333; font-weight: 600; font-size: 15px;">
     <div class="container-fluid" style="margin-right: 30px; margin-left: 30px;">
@@ -46,19 +81,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </nav>
 
 
-<div style="margin-right: 60px; margin-left: 60px; margin-bottom: 60px;"> 
+<div style="margin-right: 55px; margin-left: 55px; margin-bottom: 55px;"> 
     
 
     <section class="row container-fluid" style = "background-image: linear-gradient(to right, rgb(7, 7, 44), rgb(45, 45, 97));
-    color: rgb(199, 153, 176); font-weight: 600; font-size: 20px;">
+    color: rgb(199, 153, 176); font-weight: 700; font-size: 4vw">
+      
       <div>
-        <div style= "padding: 50px">
-          <h1 style="font-weight: 700; font-size: 80px;">Coming Soon</h1>
-          <br>
-        </div>
+        <p>Past Projects</p>
       </div>
+      
     </section>
 
+    <section class="container-fluid row section-box">
+      <div>
+        
+        <a href="Writting Samples/Senior_Thesis.pdf">Senior Thesis</a>
+      </div>
+    </section>
     
 </div>
 
