@@ -13,11 +13,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jon Scheaffer</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <!-- <link rel="icon" href="images\ProfilePIC.png"> -->
 </head>
 
 
 <style>
+  .intro-page {
+    background-image: linear-gradient(to right, rgb(7, 7, 44), rgb(45, 45, 97));
+    color: rgb(199, 153, 176); 
+    font-weight: 600; 
+    font-size: 20px;
+  }
+  .header-section { 
+    font-weight: 600; font-size: 2vw;
+  }
+  .section-box {
+    background-color: #e6e6e6;  padding: 2vw; display: flex; flex-wrap: wrap;
+  }
+  .picture-box-outside {
+    background-color:  #ffffff; flex: 1; padding: 1vw; display: flex; align-items: center; justify-content: center
+  }
+  .picture-box-inside {
+    background-color:  rgb(199, 153, 176); padding: 1vw;
+  }
+  .image-sect{
+    max-width: 100%; width: 30vw;
+  }
+  .text-box-sect { 
+    background-color: #f3f2f2; flex: 2; font-weight: 500; font-size: 1.5vw;
+  }
   @media (max-width: 767px) {
       .container-fluid.row {
           flex-direction: column; /* Stack items vertically on smaller screens */
@@ -36,27 +62,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
   <!-- nav Section -->
-  <nav class="navbar navbar-light" style="background-color: #333333; font-weight: 600; font-size: 15px;">
-    <div class="container-fluid navbar-collapse" style="margin-right: 30px; margin-left: 30px; display: flex; align-items: center;">
-      <div class="navbar-header">  
-        <a class="navbar-brand" style = "color: #ffffff" href="index.html">J S</a>
-
-        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false" aria-controls="navbar">
-          &#9776;
+  <nav class="navbar navbar-default" style="background-color: #333333; font-weight: 600; font-size: 15px;">
+    <div class="container-fluid" style="margin-right: 30px; margin-left: 30px;">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
-      </div>  
-      <div class="navbar-collapse collapse align-right" id="collapse-navbar">
-        <ul class="nav navbar-nav align-right">
-
-          <li class="nav-item">
-            <a class="nav-link active" style = "color: #ffffff" aria-current="page" href="Resume.html">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style = "color: #ffffff" aria-current="page" href="Projects.html">Projects</a>
-          </li>
+        <a class="navbar-brand" style = "color: #ffffff" href="index.html">J S</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a style = "color: #ffffff" href="Resume.html">Resume</a></li>
+          <li><a style = "color: #ffffff" href="Projects.html">Projects</a></li>
+          
         </ul>
       </div>
-        
     </div>
   </nav>
 
@@ -85,26 +107,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <br>
     <!-- My Story Section -->
-    <section class="container-fluid row" style="background-color: #e6e6e6;  padding: 2vw; display: flex; flex-wrap: wrap;">
+    <section class="container-fluid row section-box">
 
-        <div class="col-md-4" style="background-color:  #ffffff; flex: 1; padding: 1vw; display: flex; align-items: center; justify-content: center">
-          <div style="background-color:  rgb(199, 153, 176); padding: 1vw;">
-            <img src="images\grad_photo.jpg" style="max-width: 100%; width: 30vw;" alt="Grad Photo">
+        <div class="col-md-4 picture-box-outside">
+          <div class= "picture-box-inside">
+            <img src="images\grad_photo.jpg" class="image-sect" alt="Grad Photo">
           </div>
         </div>
-        <div class="col-md-8" style="background-color: #f3f2f2; flex: 2"> 
+        <div class="col-md-8 text-box-sect"> 
           <br>
-          <p style="font-weight: 600; font-size: 2vw;">My Story</p>
+          <p class="header-section">My Story</p>
           <br>
-          <p style="font-weight: 500; font-size: 1.5vw;">I am an aspiring Data Scientist who not only has excelled at researching tree nut data to forecast their future production capacity but has used causal inference to find the real effect agriculture practices on Indian farmer's livelhood.
+          <p>I am an aspiring Data Scientist who not only has excelled at researching tree nut data to forecast their future production capacity but has used causal inference to find the real effect agriculture practices on Indian farmer's livelhood.
           </p>
-          <p style="font-weight: 500; font-size: 1.5vw;">In 2021, I graduated from Thomas Aquinas College, a college in which students read no textbooks but rather only text straight from the orginal authors. It was here I fell in love with Mathematics from reading the works of Descartes, Leibiniz, and Newton.
+          <p>In 2021, I graduated from Thomas Aquinas College, a college in which students read no textbooks but rather only text straight from the orginal authors. It was here I fell in love with Mathematics from reading the works of Descartes, Leibiniz, and Newton.
           </p>
-          <p style="font-weight: 500; font-size: 1.5vw;">After Graduating, I completed UC Davis’ Data Analytics Certificate program, which helped me gain valuable skills including (but not limited to) Excel, VBA, Python, HTML, and JavaScript. In the meantime I worked directly under the V.P. of Acquisitions and Strategy as an Assisatant Research Economist. In this role, I compiled data on agricultural commodities and created compelling visualizations to present before the board. 
+          <p">After Graduating, I completed UC Davis’ Data Analytics Certificate program, which helped me gain valuable skills including (but not limited to) Excel, VBA, Python, HTML, and JavaScript. In the meantime I worked directly under the V.P. of Acquisitions and Strategy as an Assisatant Research Economist. In this role, I compiled data on agricultural commodities and created compelling visualizations to present before the board. 
           </p>
-          <p style="font-weight: 500; font-size: 1.5vw;">In June 2023, I successfully completed the Quantitative Economics Masters program at Cal Poly. During my time there, I honed my expertise as a practitioner of Econometrics for Causal Inference, leveraging my coding skills acquired from the certificate program to tackle complex problems. Notably, I collaborated with the IFC to evaluate the causal effect of good agricultural practices on Indian farmers' yield and cost. Given that our sample was not randomized, we employed an instrumental variable model to mitigate potential biases.
+          <p>In June 2023, I successfully completed the Quantitative Economics Masters program at Cal Poly. During my time there, I honed my expertise as a practitioner of Econometrics for Causal Inference, leveraging my coding skills acquired from the certificate program to tackle complex problems. Notably, I collaborated with the IFC to evaluate the causal effect of good agricultural practices on Indian farmers' yield and cost. Given that our sample was not randomized, we employed an instrumental variable model to mitigate potential biases.
           </p>
-          <p style="font-weight: 500; font-size: 1.5vw;">In October, I will be getting married to my fiancée, Emily Hurtado. Following our wedding, we plan to build our life together in San Luis Obispo.
+          <p>In October, I will be getting married to my fiancée, Emily Hurtado. Following our wedding, we plan to build our life together in San Luis Obispo.
           </p>
           <br>
         </div> 
@@ -113,31 +135,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <br>
     
     <!-- Hobbies Section -->
-    <section class="row container-fluid" style="background-color: #e6e6e6; padding: 2vw;">
+    <section class="row container-fluid section-box">
       <br>
-      <div class="col-md-8" style="background-color: #f3f2f2; padding: 40px;">
-        <h2>Hobbies</h2>
+      <div class="col-md-8 text-box-sect">
         <br>
-        <p style="font-weight: 500; font-size: 1.5vw;">I have a deep passion for the great outdoors. For the past 8 years, 
+        <p class="header-section">Hobbies</p>
+        <br>
+        <p>I have a deep passion for the great outdoors. For the past 8 years, 
           I have embarked on several fifty-mile backpacking adventures along the Pacific Crest Trail. In addition to backpacking, I am an avid scuba diver. Some of my favorite diving spots are the Channel Islands and Cozumel. When I'm not exploring the great outdoors, you can often find me engrossed in a book.  My favorite writers are Tolstoy and Doevesky. I also water color paint.</p>
       </div>
       <br>
 
-      <div class="col-md-4">
-        <img src="images/IMG_87.jpg" style = "max-width: 100%; height: auto; padding-left: 30px" alt="Scuba Photo">
+      <div class="col-md-4  picture-box-outside"">
+        <div class= "picture-box-inside">
+          <img src="images/IMG_87.jpg" class = "image-sect" alt="Scuba Photo">
+        </div>
       </div>
       
     </section>
     <br>
     
     <!-- Faith Section -->
-    <section class="row container-fluid" style="background-color: #e6e6e6; padding: 2vw;">
+    <section class="row container-fluid section-box">
       <br>
-      <div class="col-lg-4" >
-        <img src="images/IMG_4187.jpg" style = "max-width: 100%; height: auto; padding-right: 30px" alt="Faith Picture">
+      <div class="col-lg-4 picture-box-outside" >
+        <div class= "picture-box-inside">
+          <img src="images/IMG_4187.jpg" class="image-sect" alt="Faith Picture">
+        </div>
       </div>
-      <div class="col-lg-8" style="background-color: #f3f2f2; padding: 40px;">
-        <h2>Faith</h2>
+      <div class="col-lg-8 text-box-sect">
+        <p class="header-section">Faith</p>
         <br>
         <p style="font-weight: 500; font-size: 1.5vw;">My Catholic faith motivates me to pursue personal sanctity and uplift the lives of others. As such, when 
           given a choice between God and my career I will always choose God. I follow the example of my Patron, Saint 
